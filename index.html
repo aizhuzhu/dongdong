@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>大脑单线程1->Web前端学习进程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="csshake.min.css">
+    <link rel="stylesheet" href="01.css" type="text/css">
+</head>
+<body>
+<div id="div_head">
+<div class="dh_left"></div>
+<div class="dh_right"></div>
+</div>
+    <div id="root">
+       <div class="title">Programming To Make Our Happy
+      </div>
+        <div class="div_class_01 shake shake-slow">
+            <a class="a_class_01" href="../Chat/chat/onehome.jsp">
+                <img class="img_class_01" src="./img/yin.jpg">
+            </a>
+            <p class="zi">英雄联盟</p>
+            <div class="mark"></div>
+        </div>
+        <div class="div_class_01 shake shake-little">
+            <a href="../HtmlAndJava/01/01.html">
+                <img class="img_class_01" src="./img/1.jpg">
+            </a>
+            <p class="zi"> 计算器(js)</p>
+            <div class="mark"></div>
+        </div>
+        <div class="div_class_01 shake shake-horizontal">
+            <a href="../HtmlAndJava/02/02.html">
+                <img class="img_class_01" src="./img/3.jpg">
+            </a>
+            <p class="zi">轮播小图</p>
+            <div class="mark"></div>
+        </div>
+        <div class="div_class_01 shake shake.vertical">
+            <a href="../HtmlAndJava/03/03.html">
+                <img class="img_class_01" src="./img/4.jpg">
+            </a>
+            <p class="zi">卡片布局</p>
+            <div class="mark"></div>
+        </div>
+        <div class="div_class_01 shake shake-rotate">
+            <a href="../HtmlAndJava/liujing/HTML/index.html">
+                <img class="img_class_01" src="./img/5.png">
+            </a>
+            <p class="zi">小静作业</p>
+            <div class="mark">
+                
+            </div>
+        </div>
+        <div class="div_class_01 shake shake-opacity">
+            <a href="../HtmlAndJava/05/05.html">
+                <img class="img_class_01" src="./img/ji.jpg">
+            </a>
+            <p class="zi">图灵机器人</p>
+            <div class="mark">
+                
+            </div>
+        </div>
+</div>
+</body>
+<script>
+    $(".div_class_01").on("mouseenter",function(){
+        $(this).find('div.mark').fadeIn();
+        $(this).find('p.zi').slideDown();
+    })
+    $(".div_class_01").on("mouseleave",function(){
+        $(this).find('div.mark').fadeOut();
+        $(this).find('p.zi').slideUp();
+    })
+</script>
+</html>
